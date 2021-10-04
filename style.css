@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10px;
+    background-color: ivory;
+    color: rgb(8, 19, 93);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+xmp{
+    background-color: rgb(8, 19, 93);
+    color:ivory;
+    width: 50%;
+    margin: auto;
+    border-radius: 1rem;
+    
+}
+
+.example {
+    width: 20vw;
+    height: auto;
+}
+
+
+svg{
+    border: dashed 5px rgb(8, 19, 93);
+}
+
+#exampleOne{
+    animation: rotate 5s infinite;
+    transform-origin: center center;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+} 

@@ -1,41 +1,180 @@
+:root {
+    --accent_color: #195CC8;
+    --accent_color_2: #E94F37;
+    --accent_color_3: #26A671;
+    --white: #EAE4D7;
+    --black: #141414;
+    --header_font: 'Fraunces',serif;
+    --body_font: 'Roboto',sans-serif;
+}
+
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 10px;
-    background-color: ivory;
-    color: rgb(8, 19, 93);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  
+  background-color: #EAE4D7;
+  color: #195cc8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-xmp{
-    background-color: rgb(8, 19, 93);
-    color:ivory;
-    width: 50%;
-    margin: auto;
-    border-radius: 1rem;
-    
+xmp {
+  background-color: #195cc8;
+  color: #EAE4D7;
+  width: 50%;
+  margin: auto;
+  border-radius: 1rem;
 }
 
 .example {
-    width: 20vw;
-    height: auto;
+  width: 20vw;
+  height: auto;
 }
 
-
-svg{
-    border: dashed 5px rgb(8, 19, 93);
+svg {
+  border: dashed 5px #195cc8;
 }
 
-#exampleOne{
-    animation: rotate 5s infinite;
-    transform-origin: center center;
+#exampleOne {
+  animation: rotate 5s infinite;
+  transform-origin: center center;
 }
 @keyframes rotate {
-    100%{
-        transform: rotate(360deg);
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*preloader*/
+
+.preloaderBg {
+  background-color: #195cc8;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 10;
+  cursor: none;
+}
+
+.preloaderBg svg {
+  border: none;
+  width: 30vw;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#leftEyeball,
+#rightEyeball {
+  height: 50vw;
+  animation: move 1.4s 0.2s ease-out forwards;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0);
+  }
+
+  30% {
+    transform: translate(-15%, 0);
+  }
+  65% {
+    transform: translate(15%, 0);
+  }
+  100% {
+    transform: translate(0, 22%);
+  }
+}
+
+
+.preloaderBg.done {
+    animation: welcome-load 1.7s 1.8s ease forwards;
+  }
+  
+  @keyframes welcome-load {
+    0% {
+      transform: translateY(0%);
     }
-} 
+    100% {
+      transform: translateY(-150%);
+    }
+  }
+
+
+  /*handwriter*/
+ 
+
+.handwriting{  border: none;
+    width: 20%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+  #first{
+      stroke-dasharray: 1129.7293701171875;
+      stroke-dashoffset: 1129.7293701171875;
+
+      animation: m .8s ease-in;
+      animation-fill-mode: forwards;
+  }
+
+  @keyframes m {
+      to{
+          stroke-dashoffset: 0;
+      }
+  }
+
+
+  #second{
+    stroke-dasharray: 724.6718139648438;
+    stroke-dashoffset: 724.6718139648438;
+
+    animation: os 1s .8s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes os {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+#third{
+    stroke-dasharray: 871.1315307617188;
+    stroke-dashoffset: 871.1315307617188;
+
+    animation: ho 1s 1.7s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ho {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+#four{
+    stroke-dasharray: 646.6912841796875
+    ;
+    stroke-dashoffset: 646.6912841796875
+    ;
+
+    animation: lm 1.4s 2.7s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lm {
+    to{
+        stroke-dashoffset: 0;
+    }
+}

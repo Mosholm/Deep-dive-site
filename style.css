@@ -61,6 +61,7 @@ svg {
 
 aside {
   font-style: italic;
+  margin: 2vw 4vw;
 }
 
 .split {
@@ -132,7 +133,7 @@ aside {
   }
 }
 
-.preloaderBg.done {
+.preloaderBg.done, .preloaderDemo.done {
   animation: welcome-load 1.7s 1.8s ease forwards;
 }
 
@@ -144,6 +145,7 @@ aside {
     transform: translateY(-150%);
   }
 }
+
 
 /*handwriter*/
 .cover {
@@ -157,10 +159,6 @@ aside {
 .handwriting {
   border: none;
   width: 40%;
-  /* position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 #first {
   stroke-dasharray: 1129.7293701171875;
@@ -217,6 +215,8 @@ aside {
     stroke-dashoffset: 0;
   }
 }
+
+
 
 /*handwriting link */
 

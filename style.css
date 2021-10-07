@@ -20,26 +20,49 @@
 
 body {
   background-color: #eae4d7;
-  color: #195cc8;
+  color: var(--accent_color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: flex-end;
+  margin: 2vw 10vw;
+}
+
+nav{
+  justify-self: end;
+  width: 50%;
+}
+
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li{
+list-style: none;
+margin-left: 0.7vw;
 }
 
 h1 {
   font-size: 3rem;
   text-transform: uppercase;
-  margin-left: 10%;
-  margin-top: 2vw;
-  margin-bottom: 0;
 }
 
-h2 {
-  margin-top: 0;
-  margin-left: 10%;
-  margin-bottom: 3vw;
+a, a:visited, a:active {
+text-decoration: none;
+color: var(--accent_color);
+}
+
+a:hover {
+text-decoration: underline;
+color: var(--line-active);
 }
 
 article {
-  width: 80%;
+  max-width: 80%;
   margin: auto;
 }
 

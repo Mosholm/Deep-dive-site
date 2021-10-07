@@ -7,12 +7,10 @@
   --header_font: "Fraunces", serif;
   --body_font: "Roboto", sans-serif;
 
-  --text: #2B3044;
-  --line: #BBC1E1;
+  --text: #2b3044;
+  --line: #bbc1e1;
   --line-active: #195cc8;
 }
-
-
 
 * {
   margin: 0;
@@ -26,21 +24,57 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-xmp {
-  background-color: #195cc8;
-  color: #eae4d7;
-  width: 50%;
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-left: 10%;
+  margin-top: 2vw;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-left: 10%;
+  margin-bottom: 3vw;
+}
+
+article {
+  width: 80%;
   margin: auto;
-  border-radius: 1rem;
+}
+
+section {
+  margin: 2vw 0;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+img {
+  border-radius: 0.5em;
+}
+
+svg {
+  border: dashed 5px #195cc8;
+}
+
+aside {
+  font-style: italic;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2vw;
+  margin: 5vw 0;
+  justify-items: center;
+  align-items: center;
 }
 
 .example {
   width: 20vw;
   height: auto;
-}
-
-svg {
-  border: dashed 5px #195cc8;
 }
 
 #exampleOne {
@@ -184,7 +218,6 @@ svg {
   }
 }
 
-
 /*handwriting link */
 
 p {
@@ -216,64 +249,54 @@ p a svg {
   transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
 }
 
-
 p a:hover {
   --spacing: 4px;
   --stroke: var(--line-active);
-  --stroke-delay: .1s;
+  --stroke-delay: 0.1s;
   --offset: 180px;
 }
 
-
 /*button*/
-#download{
+#download {
   position: absolute;
   top: 30%;
-  left: 30%
+  left: 30%;
 }
 
-#container{
+#container {
   transition: all 0.25s;
   cursor: pointer;
-  
 }
 
-#container:hover{
+#container:hover {
   opacity: 0.6;
 }
 
-rect{
+rect {
   transition: all 1s 0.2s;
-
 }
-.collapse rect{
+.collapse rect {
   transform-origin: center;
-  transform:scaleY(0.1);
+  transform: scaleY(0.1);
   opacity: 0.6;
-
 }
 
-text{
-transition: all 0.1s 0.2s
+text {
+  transition: all 0.1s 0.2s;
 }
-.collapse text{
-opacity: 0;
+.collapse text {
+  opacity: 0;
 }
 
-
-#container, #newLine{
+#container,
+#newLine {
   transition: all 1.5s 1.5s;
 }
 
-
-
-.hidden{
+.hidden {
   visibility: hidden;
 }
 
 .show {
   visibility: visible;
-
 }
-
-

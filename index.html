@@ -11,121 +11,134 @@
 
 <body>
     <header>
+        <nav>
+            <h1>Deep Dive week</h1>
+        </nav>
     </header>
     <main>
-        <h1>Deep Dive week</h1>
-        <h2>SVG animations as microinteractions</h2>
 
-        <section class="usefullLinks">
+        <h2> - a guide on SVG animations as microinteractions</h2>
+
+        <!-- <section class="usefullLinks">
             <h3>Usefull links</h3>
             <ul>
                 <li><a href="https://codepen.io/sdras">Sarah Drasner - Codepen</a></li>
-
             </ul>
-        </section>
+        </section> -->
+
+        <article>
+            <section>
+                <h3>Why microinteractions</h3>
+                <p>
+                    TEXT HERE
+                </p>
+
+            </section>
+
+            <section>
+                <h3>What are microinteractions</h3>
+
+                <blockquote
+                    cite="https://uxdesign.cc/micro-interactions-a-superpower-of-successful-design-ef7706154934">
+                    <p> Micro-Interactions are like any other interactions with devices, which are used to communicate
+                        meaningful feedback to the users because a user has to constantly know what happens when an
+                        action is
+                        performed. It’s a human tendency to expect something to happen when you click a button, scroll a
+                        page,
+                        add an item to the cart, left swipe a card.</p>
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>SVG basics</h3>
+                <h4>What is SVG - Scalable Vector Graphics</h4>
+
+                <p>previously we have exported vectors and drawings in design programs such as Adobe Illustrator. But
+                    the
+                    content inside the SVGfile is code looking and working like HTML. This means we are able to code SVG
+                    directly in our HTMLfile. </p>
+
+                <p>important: Now that SVG are vectors and fluit we do not work with px but units. This is why the
+                    drawingboard here dont have any descriptopn but 100X100</p>
 
 
-        <section>
-            <h3>Why microinteractions</h3>
-            <div class="links">
-            </div>
+                <div class="split">
+
+                    <img src="exampleOne.png" alt="first example">
+
+                    <div class="example">
+                        <svg viewBox="0 0 10 10">
+                            <rect width="5" height="7" x="1" y="1"></rect>
+                        </svg>
+                    </div>
 
 
-        </section>
-
-        <section>
-            <h3>What are microinteractions</h3>
-
-            <blockquote cite="https://uxdesign.cc/micro-interactions-a-superpower-of-successful-design-ef7706154934">
-                Micro-Interactions are like any other interactions with devices, which are used to communicate
-                meaningful feedback to the users because a user has to constantly know what happens when an action is
-                performed. It’s a human tendency to expect something to happen when you click a button, scroll a page,
-                add an item to the cart, left swipe a card.
-            </blockquote>
-        </section>
-
-        <section>
-            <h3>SVG basics</h3>
-            <h4>What is SVG - Scalable Vector Graphics</h4>
-
-            <p>previously we have exported vectors and drawings in design programs such as Adobe Illustrator. But the
-                content inside the SVGfile is code looking and working like HTML.              This means we are able to code SVG directly in our HTMLfile. </p>
-
-            <p>important: Now that SVG are vectors and fluit we do not work with px but units. This is why the
-                drawingboard here
-                dont have any descriptopn but 100X100</p>
+                    <p>Inside the SVG tag you can work with a wide array of elements. In this case a rectangle.
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element">SVG element reference</a>
+                    </p>
 
 
-            <figure>
-                <xmp>
-                    <svg viewBox="0 0 10 10">
-                        <!-- This is now my design drawing board 100X100 units-->
-                        <rect width="5" height="7" x="1" y="1"></rect>
-                    </svg>
-                </xmp>
-
-                <figcaption>Inside the SVG tag you can work with a wide array of elements. In this case a rectangle.
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element">SVG element reference</a>
-                </figcaption>
-            </figure>
-
-            <div class="example">
-                <svg viewBox="0 0 10 10">
-                    <rect width="5" height="7" x="1" y="1"></rect>
-                </svg>
-            </div>
-
-
-            <p>now that we have created an SVG file directly in the HTML we are able to animate it using CSS. It is just
-                a matter of selecting the right elemet</p>
-
-
-            <xmp>
-                <style>
-                    #exampleOne {
-                        animation: rotate 5s infinite;
-                        transform-origin: center center;
-                    }
-
-                    @keyframes rotate {
-                        100% {
-                            transform: rotate(360deg);
-                        }
-                    }
-                </style>
-
-                <svg viewBox="0 0 10 10">
-                    <rect id="exampleOne" width="3" height="5" x="3" y="3"></rect>
-                </svg>
-            </xmp>
-
-
-            <div class="example">
-                <svg viewBox="0 0 10 10">
-                    <rect id="exampleOne" width="3" height="5" x="3" y="3"></rect>
-                </svg>
-            </div>
-            <p>This means we are able to animate the most crasy SVG files if we are able to select the right elements.
-            </p>
-
-            <aside>
-                <p>one importent element when coding are the 'g'. the is SVG version of a div. the 'g' groups elements
-                    in the SVG together </p>
-            </aside>
-        </section>
-
-
-
-        <section>
-            <h3>Preloader</h3>
-
-        </section>
+                </div>
 
 
 
 
+                <p>now that we have created an SVG file directly in the HTML we are able to animate it using CSS. It is
+                    just
+                    a matter of selecting the right elemet</p>
+
+                <div class="split">
+                    <img src="ExampleTwo.png" alt="second example">
 
 
+                    <div class="example">
+                        <svg viewBox="0 0 10 10">
+                            <rect id="exampleOne" width="3" height="5" x="3" y="3"></rect>
+                        </svg>
+                    </div>
+
+                    <p>This means we are able to animate the most crasy SVG files if we are able to select the right
+                        elements.
+                    </p>
+                </div>
+
+
+                <br>
+                <aside>
+                    <p>one importent element when coding are the 'g'. the is SVG version of a 'div'. the 'g' groups
+                        elements
+                        in the SVG together.</p>
+                </aside>
+
+                <p>With this basic knowledge about SVG and how we are able to manipulate it I have created several
+                    microinteractions elements you can try out yourself.</p>
+            </section>
+
+
+
+            <section>            
+                <h3 id="preloader">Preloader</h3>
+                <a href="preloader.html">Click to see the preloader</a>
+
+                <h4> Create your own preloader</h4>
+<ol>
+    <li>
+<p>In illustrator I drew the SVG icon I wanted to animate. Here a set of eyes</p>
+
+<p>i placed the svg in my HTML and arranged the different elements with 'id' tags. As you can see the svg has already been styled directly in the html. This styling are integrated in illustrator</p>
+
+<div class="split">
+    <img src="examplethree.png" alt="third example">
+</div>
+
+
+
+    </li>
+</ol>
+
+            </section>
+
+        </article>
 
     </main>
     <footer></footer>

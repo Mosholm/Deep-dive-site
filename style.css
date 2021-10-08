@@ -18,32 +18,36 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #eae4d7;
   color: var(--accent_color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header{
+header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   align-items: flex-end;
   margin: 2vw 10vw;
 }
 
-nav{
+nav {
   justify-self: end;
   width: 50%;
 }
 
-nav ul{
+nav ul {
   display: flex;
   justify-content: flex-end;
 }
 
-nav ul li{
-list-style: none;
-margin-left: 0.7vw;
+nav ul li,
+footer ul li {
+  list-style: none;
+  margin-left: 0.7vw;
 }
 
 h1 {
@@ -51,14 +55,16 @@ h1 {
   text-transform: uppercase;
 }
 
-a, a:visited, a:active {
-text-decoration: none;
-color: var(--accent_color);
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--accent_color);
 }
 
 a:hover {
-text-decoration: underline;
-color: var(--line-active);
+  text-decoration: underline;
+  color: var(--line-active);
 }
 
 article {
@@ -68,10 +74,13 @@ article {
 
 section {
   margin: 2vw 0;
+  border-top: 1px solid;
+  padding-top: 1em;
 }
 
 p {
   line-height: 1.5rem;
+  margin: 1rem 0;
 }
 
 img {
@@ -84,7 +93,25 @@ svg {
 
 aside {
   font-style: italic;
-  margin: 2vw 4vw;
+  max-width: 60%;
+  padding: 1em;
+  background-color: var(--accent_color);
+  color: var(--white);
+  border-radius: 0.5em;
+  margin: auto;
+
+}
+
+aside p{
+  color: inherit;
+}
+
+.hand{
+  background-color: var(--white);
+  color: var(--text);
+max-width: 70%;
+  border: solid 1px;
+  padding-left: 2em;
 }
 
 .split {
@@ -109,6 +136,34 @@ aside {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.source ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.source ul li p{
+  margin: 0.2em;
+}
+
+footer {
+  background-color: var(--accent_color);
+  padding: 1em;
+  margin-top: 12vw;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin: auto;
+}
+
+footer ul li p {
+  font-size: 0.7em;
+  color: var(--white);
 }
 
 /*preloader*/
@@ -156,7 +211,8 @@ aside {
   }
 }
 
-.preloaderBg.done, .preloaderDemo.done {
+.preloaderBg.done,
+.preloaderDemo.done {
   animation: welcome-load 1.7s 1.8s ease forwards;
 }
 
@@ -168,7 +224,6 @@ aside {
     transform: translateY(-150%);
   }
 }
-
 
 /*handwriter*/
 .cover {
@@ -239,8 +294,6 @@ aside {
   }
 }
 
-
-
 /*handwriting link */
 
 p {
@@ -298,7 +351,7 @@ p a:hover {
 rect {
   transition: all 1s 0.2s;
 }
-.collapse rect {
+.collapse {
   transform-origin: center;
   transform: scaleY(0.1);
   opacity: 0.6;
@@ -311,9 +364,8 @@ text {
   opacity: 0;
 }
 
-#container,
 #newLine {
-  transition: all 1.5s 1.5s;
+  transition: all 1.5s;
 }
 
 .hidden {

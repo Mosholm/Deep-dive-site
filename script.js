@@ -16,10 +16,15 @@ window.addEventListener("load", () => {
 // p.getTotalLength()
 
 /*download button*/
+var click = document.getElementsById("download");
 
-document.addEventListener("click", function () {
-  var collapse = document.getElementById("container");
-  collapse.classList.toggle("collapse");
+
+click.addEventListener("click", function () {
+  console.log("click");
+  var collapse = document.getElementById("background");
+  collapse.classList.add("collapse");
+
+
 
   var newline = document.getElementById("newLine");
   newLine.classList.add("show");

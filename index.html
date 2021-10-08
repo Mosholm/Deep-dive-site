@@ -19,7 +19,7 @@
             <ul>
                 <li> <a href="index.html#preloader">Preloader</a></li>
                 <li> <a href="index.html#handwriting">Handwriting</a></li>
-                <li> <a href="index.html#download">Download</a></li>
+                <!-- <li> <a href="index.html#download">Download</a></li> -->
             </ul>
         </nav>
     </header>
@@ -32,17 +32,13 @@
         </section> -->
 
         <article>
-            <section>
+            <!-- <section>
                 <h3>Why microinteractions</h3>
-                <p>
-                    TEXT HERE
-                </p>
-
-            </section>
+                <p></p>
+            </section> -->
 
             <section>
                 <h3>What are microinteractions</h3>
-
                 <blockquote
                     cite="https://uxdesign.cc/micro-interactions-a-superpower-of-successful-design-ef7706154934">
                     <p> Micro-Interactions are like any other interactions with devices, which are used to communicate
@@ -51,88 +47,77 @@
                         performed. It’s a human tendency to expect something to happen when you click a button, scroll a
                         page,
                         add an item to the cart, left swipe a card.</p>
+                    <p> <a
+                            href="https://uxdesign.cc/micro-interactions-a-superpower-of-successful-design-ef7706154934">Source</a>
+                    </p>
                 </blockquote>
-<div class="split">
-                <figure>
-                    <img src="example12.png" alt="the structure of microinteractions">
-                    <figcaption>The structure of microinteractions <a href="http://microinteractions.com/what-is-a-microinteraction/">source</a> </figcaption>
-                </figure>
-            </div>
+                <div class="split">
+                    <figure>
+                        <img src="example12.png" alt="the structure of microinteractions">
+                        <figcaption>The structure of microinteractions <br>
+                            <p><a href="http://microinteractions.com/what-is-a-microinteraction/">Source</a></p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <p>Microinteractions always has a trigger. This can be both a user i.e clicking a button or the system
+                    meeting a set of predetermined conditions. <br> After the trigger event, the system behave after a
+                    preset rule that determinds what happens. <br> While the feedback let the user know what is
+                    happening. <br>The loops & modes are the last part of the interaction that states what should happen
+                    after.</p>
             </section>
 
             <section>
-                <h3>SVG basics</h3>
-                <h4>What is SVG - Scalable Vector Graphics</h4>
-
+                <h2>What is SVG - Scalable Vector Graphics</h2>
                 <p>previously we have exported vectors and drawings in design programs such as Adobe Illustrator. But
                     the
                     content inside the SVGfile is code looking and working like HTML. This means we are able to code SVG
                     directly in our HTMLfile. </p>
-
                 <p>important: Now that SVG are vectors and fluit we do not work with px but units. This is why the
                     drawingboard here dont have any descriptopn but 100X100</p>
-
-
                 <div class="split">
-
                     <img src="exampleOne.png" alt="first example">
-
                     <div class="example">
                         <svg viewBox="0 0 10 10">
                             <rect width="5" height="7" x="1" y="1"></rect>
                         </svg>
                     </div>
-
-
                     <p>Inside the SVG tag you can work with a wide array of elements. In this case a rectangle.
                         <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element">SVG element reference</a>
                     </p>
                 </div>
-
                 <p>now that we have created an SVG file directly in the HTML we are able to animate it using CSS. It is
                     just
                     a matter of selecting the right elemet</p>
-
                 <div class="split">
                     <img src="ExampleTwo.png" alt="second example">
-
-
                     <div class="example">
                         <svg viewBox="0 0 10 10">
                             <rect id="exampleOne" width="3" height="5" x="3" y="3"></rect>
                         </svg>
                     </div>
-
                     <p>This means we are able to animate the most crasy SVG files if we are able to select the right
-                        elements.
-                    </p>
+                        elements.</p>
                 </div>
-
-
-                <br>
+                <p>With this basic knowledge about SVG and how we are able to manipulate it I have created several
+                    microinteractions elements you can try out yourself.</p>
                 <aside>
                     <p>one importent element when coding are the 'g'. the is SVG version of a 'div'. the 'g' groups
                         elements
                         in the SVG together.</p>
                 </aside>
-
-                <p>With this basic knowledge about SVG and how we are able to manipulate it I have created several
-                    microinteractions elements you can try out yourself.</p>
             </section>
 
             <section id="preloader">
-                <h3>Preloader</h3>
-                <a href="preloader.html">Click to see the preloader</a>
+                <h2>Preloader</h2>
 
-                <h4> Create your own preloader</h4>
+                <p><a href="preloader.html">Click to see the preloader</a></p>
                 <ol>
                     <li>
                         <p>In illustrator I drew the SVG icon I wanted to animate. Here a set of eyes</p>
-
                         <p>i placed the svg in my HTML and arranged the different elements with 'id' tags. As you can
                             see the svg has already been styled directly in the html. This styling are integrated in
                             illustrator</p>
-
                         <div class="split">
                             <img src="examplethree.png" alt="third example">
                         </div>
@@ -140,54 +125,45 @@
                     <li>
                         <p>Go to you CSS file and style the preloader. make sure it takes up the entire screen. A nifty
                             litle feature is to 'turn of' the curser while the preloader is on the screen</p>
-
                         <div class="split">
-
                             <img src="exampleFour.png" alt="this is example four">
-
                             <img src="exampleFive.png" alt="This is example five">
-
                         </div>
                     </li>
-
                     <li>
                         <p>
                             Some preloaders works alone a information. informing the user that something IS actually
                             happening. with these kind of loader informations. The animation is controled by JS. Where a
                             'removing-class is added the the 'container' with an event listener.
                         </p>
-                        <br>
-                        <p>In this case the preloader works more as a animation that has to finish before the preloader
-                            disapears. This can be controled by CSS alone. But for the example the 'done' class are
-                            added to the preloader with JS</p>
-
                         <div class="split">
                             <img src="exampleSix.png" alt="">
                             <img src="exampleSeven.png" alt="">
+                            <p>In this case the preloader works more as a animation that has to finish before the
+                                preloader
+                                disapears. This can be controled by CSS alone. But for the example the 'done' class are
+                                added to the preloader with JS</p>
                         </div>
-
                     </li>
-
                     <p>Thats it. Now you have animated your SVG and turned it into a preloader</p>
-
                 </ol>
-                <a href="preloader.html">Click to see the preloader</a>
-
-                <h4>Dive deeper</h4>
+                <p>
+                    <a href="preloader.html">Click to experience the preloader</a></p>
+                <h3>Dive deeper</h3>
                 <ul>
-                    <li><a href="https://www.youtube.com/watch?v=bynbNQcgKuI">youtube</a></li>
+                    <li>
+                        <p><a href="https://www.youtube.com/watch?v=bynbNQcgKuI">youtube</a></p>
+                    </li>
                 </ul>
-
                 </div>
-
             </section>
 
             <section id="handwriting">
-                <h3>Handwriting</h3>
-                <p>another commonly used SVG animation are the dasharray and dashoffset. styling and animatin of these
+                <h2>Handwriting</h2>
+                <p>Another commonly used SVG animation are the dasharray and dashoffset. styling and animatin of these
                     can create a handwritten function</p>
 
-                <a href="handwriting.html">Click to see the handwriting</a>
+                <p><a href="handwriting.html">Click to see the handwriting</a> </p>
 
                 <ol>
                     <li>
@@ -195,7 +171,7 @@
                             Before styling and animating, the signature are created in illustrator. Here it is important
                             to
                             create the object by using the pentool.</p>
-                        <aside>
+                        <aside class="hand">
                             <p>If you as I, have drawn the object on a oldschool piece of paper,a used the 'trace image'
                                 function, <a
                                     href="https://community.adobe.com/t5/illustrator-discussions/convert-a-solid-filled-shape-into-a-single-line/td-p/7614879">this
@@ -237,10 +213,10 @@
                             'stroke-dasharray' and type the exact lenght of the path. And as a oponent add
                             'stroke-dashoffset' and type the same value.
                         </p>
-                        <br>
-                        <p>calculate the exact lenght in the console log.</p>
-                        <p>type: p=document.getElementById('first'); <br>p.getTotalLength() </p>
-
+                        <aside>
+                            <p>calculate the exact lenght in the console log. Type:</p>
+                            <p>p=document.getElementById('first'); <br>p.getTotalLength() </p>
+                        </aside>
                         <div class="split">
                             <img src="example9.png" alt="Number nine">
                             <img src="example10.png" alt="Number ten">
@@ -250,14 +226,11 @@
                         <p>by moving the 'strike-dashoffset from <span>1129.7293701171875</span>to <span>0</span>the
                             letter 'M' appear manipulated by the alocated CSS animation</p>
                     </li>
-
                     <li>
                         <p>Continue by targeting the next object in the CSS. If you want the handwriting finction the
                             next animation in line should have a dalay and so forth.</p>
                     </li>
-
                 </ol>
-
                 <div class="split">
                     <svg class="handwriting" id="Layer_4" data-name="Layer 4" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 1146.21 509.55">
@@ -308,12 +281,15 @@
                     </svg>
                 </div>
                 <p>Use the same concept to create microinteractions on i.e. hyperlinks</p>
-
+                <p>
+                    using the 'stroke dasharray' and the 'stroke-dashoffset' you can animaate countless line drawings,
+                    ways of appearing and ways of content do disappear.
+                </p>
                 <div class="hoverLink">
                     <p>
                         Click
                         <a href="handwriting.html">
-                            here
+                            the link
                             <svg viewBox="0 0 70 36">
                                 <path
                                     d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
@@ -322,27 +298,64 @@
                         to see the handwriting
                     </p>
                 </div>
-
-                <h4>Dive deeper</h4>
-                <ul>
-                    <li><a href="https://www.youtube.com/watch?v=LuWdeuPMHps">Youtube</a></li>
-                    <li><a
-                            href="https://community.adobe.com/t5/illustrator-discussions/convert-a-solid-filled-shape-into-a-single-line/td-p/7614879">Adobe</a>
-                    </li>
-                    <li><a href="https://codepen.io/aaroniker/pen/VwjexVy">Codepen</a></li>
-                </ul>
-
             </section>
-
-            <section id="download">
-
-
+            <section class="source">
+                <h4>Sources</h4>
+                <ul>
+                    <li>
+                        <p><a
+                                href="https://uxdesign.cc/micro-interactions-a-superpower-of-successful-design-ef7706154934">Micro-Interactions:
+                                a designer’s superpower</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://uxdesign.cc/why-micro-interactions-matter-318e1409a6b2">Why
+                                Micro-interactions are important for UX</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://microinteractions.com/what-is-a-microinteraction/">Microinteractions</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://www.oreilly.com/library/view/microinteractions/9781449342760/ch01.html">O'reilly
+                                - Chapter 1. designing microinteractions</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://www.youtube.com/watch?v=vJNVramny9k">SVG Animation With Text Tutorial | HTML
+                                CSS</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://www.youtube.com/watch?v=LuWdeuPMHps">Easy Hand-Drawn SVG Animation</a></p>
+                    </li>
+                    <li>
+                        <p><a
+                                href="https://community.adobe.com/t5/illustrator-discussions/convert-a-solid-filled-shape-into-a-single-line/td-p/7614879">Convert
+                                a solid filled shape into a single line</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://codepen.io/aaroniker/pen/VwjexVy">Link hover animation</a></p>
+                    </li>
+                </ul>
             </section>
 
         </article>
 
     </main>
-    <footer></footer>
+    <footer>
+        <ul>
+            <li>
+                <p>Olivia Mosholm</p>
+            </li>
+            <li>
+                <p>Theme 8 - Deep Dive</p>
+            </li>
+            <li>
+                <p>SVG animations as microinteractions</p>
+            </li>
+
+            <li>
+                <p>&copy;All rights reserved </p>
+            </li>
+        </ul>
+    </footer>
     <script src="script.js"></script>
 </body>
 

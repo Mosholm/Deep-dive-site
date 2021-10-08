@@ -41,12 +41,7 @@
                 <h3>What are microinteractions</h3>
                 <blockquote
                     cite="https://uxdesign.cc/micro-interactions-a-superpower-of-successful-design-ef7706154934">
-                    <p> Micro-Interactions are like any other interactions with devices, which are used to communicate
-                        meaningful feedback to the users because a user has to constantly know what happens when an
-                        action is
-                        performed. It’s a human tendency to expect something to happen when you click a button, scroll a
-                        page,
-                        add an item to the cart, left swipe a card.</p>
+                    <p> Micro-Interactions are like any other interactions with devices, which are used to communicate meaningful feedback to the users because a user has to know what happens when an action is performed. It's a human tendency to expect something to happen when you click a button, scroll a page, add an item to the cart, or swipe a card.</p>
                     <p> <a
                             href="https://uxdesign.cc/micro-interactions-a-superpower-of-successful-design-ef7706154934">Source</a>
                     </p>
@@ -60,21 +55,15 @@
                     </figure>
                 </div>
 
-                <p>Microinteractions always has a trigger. This can be both a user i.e clicking a button or the system
-                    meeting a set of predetermined conditions. <br> After the trigger event, the system behave after a
-                    preset rule that determinds what happens. <br> While the feedback let the user know what is
-                    happening. <br>The loops & modes are the last part of the interaction that states what should happen
-                    after.</p>
+                <p>Microinteractions always have a trigger. This can be both a user, i.e., clicking a button, or the system meeting a set of predetermined conditions. 
+                    After the trigger event, the system behaves after a certain preset rule that determines what happens – while the feedback lets the user know what is happening. 
+                    The loops & modes are the last part of the interaction. The step that states what should happen next. </p>
             </section>
 
             <section>
                 <h2>What is SVG - Scalable Vector Graphics</h2>
-                <p>previously we have exported vectors and drawings in design programs such as Adobe Illustrator. But
-                    the
-                    content inside the SVGfile is code looking and working like HTML. This means we are able to code SVG
-                    directly in our HTMLfile. </p>
-                <p>important: Now that SVG are vectors and fluit we do not work with px but units. This is why the
-                    drawingboard here dont have any descriptopn but 100X100</p>
+                <p>Previously we have exported SVG files drawn in design programs such as Adobe Illustrator and treated it as an image. But the content inside the SVG file is code-looking and works like HTML. This means we can code SVG directly in our HTML file.</p>
+                <p>Important: Now that SVG is vectors, we do not work with fixed values such as px but relative values - units. This is why the drawing board here doesn't have any description but 100X100.</p>
                 <div class="split">
                     <img src="exampleOne.png" alt="first example">
                     <div class="example">
@@ -82,13 +71,11 @@
                             <rect width="5" height="7" x="1" y="1"></rect>
                         </svg>
                     </div>
-                    <p>Inside the SVG tag you can work with a wide array of elements. In this case a rectangle.
+                    <p>Inside the SVG tag, you can work with a wide array of elements. In this case, a rectangle.
                         <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element">SVG element reference</a>
                     </p>
                 </div>
-                <p>now that we have created an SVG file directly in the HTML we are able to animate it using CSS. It is
-                    just
-                    a matter of selecting the right elemet</p>
+                <p>Now that we have created an SVG file directly in the HTML, we can animate it using CSS. It is just a matter of selecting the right element.</p>
                 <div class="split">
                     <img src="ExampleTwo.png" alt="second example">
                     <div class="example">
@@ -96,35 +83,29 @@
                             <rect id="exampleOne" width="3" height="5" x="3" y="3"></rect>
                         </svg>
                     </div>
-                    <p>This means we are able to animate the most crasy SVG files if we are able to select the right
-                        elements.</p>
+                    <p>This means we can animate the most advanced SVG files if we are able to select the correct elements.</p>
                 </div>
-                <p>With this basic knowledge about SVG and how we are able to manipulate it I have created several
-                    microinteractions elements you can try out yourself.</p>
+                <p>With this basic knowledge about SVG and how we can manipulate it.
+                    In the following, I have created some microinteractions elements you can try out yourself- and use the ideas behind in your projects.</p>
                 <aside>
-                    <p>one importent element when coding are the 'g'. the is SVG version of a 'div'. the 'g' groups
-                        elements
-                        in the SVG together.</p>
+                    <p>NOTE: When coding SVG, the 'g' is the SVGs version of a 'div'. The 'g' groups elements in the SVG together.</p>
                 </aside>
             </section>
 
             <section id="preloader">
                 <h2>Preloader</h2>
 
-                <p><a href="preloader.html">Click to see the preloader</a></p>
+                <p><a href="preloader.html">Click to see the preloader.</a></p>
                 <ol>
                     <li>
-                        <p>In illustrator I drew the SVG icon I wanted to animate. Here a set of eyes</p>
-                        <p>i placed the svg in my HTML and arranged the different elements with 'id' tags. As you can
-                            see the svg has already been styled directly in the html. This styling are integrated in
-                            illustrator</p>
+                        <p>In Adobe Illustrator, I drew the SVG icon I wanted to animate.  – A set of eyes.</p>
+                        <p>I placed the SVG in my HTML and arranged the different elements with 'id' tags. As you can see, the SVG has already been styled directly in the HTML. This styling is integrated from Illustrator.</p>
                         <div class="split">
                             <img src="examplethree.png" alt="third example">
                         </div>
                     </li>
                     <li>
-                        <p>Go to you CSS file and style the preloader. make sure it takes up the entire screen. A nifty
-                            litle feature is to 'turn of' the curser while the preloader is on the screen</p>
+                        <p>Go to the CSS file and style the preloader. Make sure it takes up the entire screen. A nifty little feature is to 'turn off' the curser while the preloader is on the screen.</p>
                         <div class="split">
                             <img src="exampleFour.png" alt="this is example four">
                             <img src="exampleFive.png" alt="This is example five">
@@ -132,23 +113,18 @@
                     </li>
                     <li>
                         <p>
-                            Some preloaders works alone a information. informing the user that something IS actually
-                            happening. with these kind of loader informations. The animation is controled by JS. Where a
-                            'removing-class is added the the 'container' with an event listener.
+                            Some preloaders work alone as information. They are informing the user that something IS happening. With these kinds of loader information, JS controls the animation where a 'removing-class is added to the 'container' using an event listener.
                         </p>
                         <div class="split">
                             <img src="exampleSix.png" alt="">
                             <img src="exampleSeven.png" alt="">
-                            <p>In this case the preloader works more as a animation that has to finish before the
-                                preloader
-                                disapears. This can be controled by CSS alone. But for the example the 'done' class are
-                                added to the preloader with JS</p>
+                            <p>In this case, the preloader works more as an animation that has to finish before the preloader disappears. This can be controlled by CSS alone. But for the example, the 'done' class is added to the preloader with JS.</p>
                         </div>
                     </li>
-                    <p>Thats it. Now you have animated your SVG and turned it into a preloader</p>
+                    <p>That's it. Now you have animated your SVG and turned it into a preloader screen.</p>
                 </ol>
                 <p>
-                    <a href="preloader.html">Click to experience the preloader</a></p>
+                    <a href="preloader.html">Click to experience the preloader.</a></p>
                 <h3>Dive deeper</h3>
                 <ul>
                     <li>
@@ -160,48 +136,36 @@
 
             <section id="handwriting">
                 <h2>Handwriting</h2>
-                <p>Another commonly used SVG animation are the dasharray and dashoffset. styling and animatin of these
-                    can create a handwritten function</p>
+                <p>Another commonly used SVG animation are the 'dasharray' and 'dashoffset'. When using these, you can create a handwritten function.</p>
 
-                <p><a href="handwriting.html">Click to see the handwriting</a> </p>
+                <p><a href="handwriting.html">Click to see the handwriting.</a></p>
 
                 <ol>
                     <li>
-                        <p>
-                            Before styling and animating, the signature are created in illustrator. Here it is important
-                            to
-                            create the object by using the pentool.</p>
+                        <p>Before styling and animating, the signature is created in  Adobe Illustrator. Here it is crucial to make the object by using the pen tool.</p>
                         <aside class="hand">
-                            <p>If you as I, have drawn the object on a oldschool piece of paper,a used the 'trace image'
-                                function, <a
+                            <p>If you, as I, have drawn the object on an old school piece of paper and used the 'trace image' function,<a
                                     href="https://community.adobe.com/t5/illustrator-discussions/convert-a-solid-filled-shape-into-a-single-line/td-p/7614879">this
-                                    is a guide</a> to turne the drawing into a single line, a stroke.</p>
+                                    is a guide</a> to turn the drawing into a single line – a stroke.</p>
                             <ol>
                                 <li>
-                                    <p>With the Direct Selection Tool (first deselect by Clicking an empty spot and
-                                        then) Click each end path segment and press Delete (that will give you two paths
-                                        forming the curved parts);</p>
+                                    <p>With the Direct Selection Tool (first deselect by Clicking an empty spot and then) Click each end path segment and press Delete (that will give you two paths forming the curved parts);</p>
                                 </li>
                                 <li>
-                                    <p>Select everything and switch from Fill to Stroke in the Toolbox (that will give
-                                        you stroked paths (and you can see what you are doing));</p>
+                                    <p>Select everything and switch from Fill to Stroke in the Toolbox (that will give you stroked paths (and you can see what you are doing));
+                                    </p>
                                 </li>
                                 <li>
-                                    <p>Object>Blend>Blend Options, set Spacing to Specified Step with 1 step (that will
-                                        prepare the right blend);</p>
+                                    <p>Object>Blend>Blend Options set Spacing to Specified Step with 1 step (that will prepare the right blend);</p>
                                 </li>
                                 <li>
-                                    <p>Select everything and Object>Blend>Make, then Object>Blend>Expand, then
-                                        Ctrl/Cmd+Shift+G to Ungroup, then hide or delete both the original paths (that
-                                        will give you the stroked path midway between the curved paths), then set the
-                                        Stroke Weight as desired (in the screenshot both paths are kept to show that the
-                                        middle path fits).</p>
+                                    <p>Select everything and Object>Blend>Make, then Object>Blend>Expand, then Ctrl/Cmd+Shift+G to Ungroup, then hide or delete both the original paths (that will give you the stroked path midway between the curved paths), then set the Stroke Weight as desired (in the screenshot both paths are kept to show that the middle path fits).</p>
                                 </li>
                             </ol>
                         </aside>
                     </li>
                     <li>
-                        <p>Now the SVG are ready to be placed and arranged with 'ID' in the HTML.</p>
+                        <p>Now the SVG is ready to be placed and arranged with 'ID' in the HTML.</p>
                         <div class="split">
                             <img src="example8.png" alt="example number eight">
                         </div>
@@ -209,9 +173,7 @@
 
                     <li>
                         <p>
-                            Now you animate each ID. In this example we are targeting the 'M' in the CSS. Add
-                            'stroke-dasharray' and type the exact lenght of the path. And as a oponent add
-                            'stroke-dashoffset' and type the same value.
+                            Next, you animate each ID. In this example, we are targeting the 'M' in the CSS. Add 'stroke-dasharray' and type the exact length of the path. And as an oponent, add 'stroke-dashoffset' and type the same value.
                         </p>
                         <aside>
                             <p>calculate the exact lenght in the console log. Type:</p>
@@ -223,12 +185,11 @@
                         </div>
                     </li>
                     <li>
-                        <p>by moving the 'strike-dashoffset from <span>1129.7293701171875</span>to <span>0</span>the
-                            letter 'M' appear manipulated by the alocated CSS animation</p>
+                        <p>By moving the 'stoke-dashoffset' from <span>1129.7293701171875</span>to <span>0</span>the letter 'M' appear manipulated by the allocated CSS animation</p>
                     </li>
                     <li>
-                        <p>Continue by targeting the next object in the CSS. If you want the handwriting finction the
-                            next animation in line should have a dalay and so forth.</p>
+                        <p>Continue by targeting the next object in the CSS. 
+                            If you want the handwriting-look, the following animation in line should have a delay and so forth.</p>
                     </li>
                 </ol>
                 <div class="split">
@@ -280,12 +241,11 @@
                             transform="translate(-128.62 -134.79)" />
                     </svg>
                 </div>
-                <p>Use the same concept to create microinteractions on i.e. hyperlinks</p>
+                <p>Use the same concept to create microinteractions on, i.e., hyperlinks.</p>
                 <p>
-                    using the 'stroke dasharray' and the 'stroke-dashoffset' you can animaate countless line drawings,
-                    ways of appearing and ways of content do disappear.
+                    Using the 'stroke dasharray' and the 'stroke-dashoffset', you can animate countless line drawings, ways of appearing, and ways of content to disappear.
                 </p>
-                <div class="hoverLink">
+                <div id="back"class="hoverLink">
                     <p>
                         Click
                         <a href="handwriting.html">
@@ -295,7 +255,7 @@
                                     d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
                             </svg>
                         </a>
-                        to see the handwriting
+                        to see the handwriting.
                     </p>
                 </div>
             </section>
